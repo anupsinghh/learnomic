@@ -1,0 +1,78 @@
+/* Styles for Tips Section */
+.tips-banner {
+    width: 60%;
+    background-color: #ffc2e2;
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px; /* Added for rounded corners */
+  }
+  
+  .tip-box {
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .tip-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .tip-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Styles for Recommended Channels Section */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .tip-box h3 {
+      font-size: 1.2rem;
+    }
+  
+    .tip-box p {
+      font-size: 1rem;
+    }
+  
+    .channel-box p {
+      font-size: 1rem;
+    }
+  
+    .youtube-logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tip-box h3 {
+      font-size: 1rem;
+    }
+  
+    .tip-box p {
+      font-size: 0.9rem;
+    }
+  
+    .channel-box p {
+      font-size: 0.9rem;
+    }
+  
+    .youtube-logo {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
