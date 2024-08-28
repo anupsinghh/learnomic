@@ -1,54 +1,17 @@
-/* Styles for Tips Section */
-.tips-banner {
-  width: 60%;
-  background-color: #ffc2e2;
-  padding: 20px;
-  box-sizing: border-box; /* Changed to border-box for better padding control */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 10px; /* Rounded corners */
-}
-
-.tip-box {
-  background-color: #fff;
-  padding: 15px;
-  box-sizing: border-box;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  margin: 10px 0;
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
-}
-.tip-catefory{
-  
-}
-
-.tip-box h3 {
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.tip-box p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #555;
-}
-
 /* Styles for Recommended Channels Section */
 .recommended-channels {
-  width: 60%;
+  width: 100%; /* Full width of the website */
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 20px;
   background-color: #ffffff;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recommended-channels h3 {
@@ -57,10 +20,13 @@
   margin-bottom: 20px;
   color: #000000;
 }
-.recommended-channels a {
-  text-decoration: none; /* Removes the underline */
-}
 
+.recommended-channels-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns */
+  gap: 20px;
+  width: 100%; /* Ensures the grid takes up the full width of the container */
+}
 
 .subject-section {
   margin-bottom: 20px;
@@ -78,7 +44,6 @@
   border: 2px solid #ffffff;
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 10px;
   text-align: center;
   cursor: pointer; /* Makes the whole box clickable */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
@@ -104,47 +69,32 @@
   text-decoration: underline;
 }
 
+.channel-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .recommended-channels-content {
+    grid-template-columns: repeat(4, 1fr); /* Four columns on medium screens */
+  }
+}
+
 @media (max-width: 768px) {
-  .recommended-channels, .tips-banner {
-    width: 80%;
-    margin-top: 40px;
-    padding: 15px;
-  }
-
-  .tip-box h3 {
-    font-size: 1.2rem;
-  }
-
-  .tip-box p {
-    font-size: 1rem;
-  }
-
-  .channel-box a {
-    font-size: 1rem;
+  .recommended-channels-content {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .recommended-channels, .tips-banner {
-    width: 90%;
-    margin-top: 30px;
-    padding: 10px;
-  }
-
-  .tip-box h3 {
-    font-size: 1rem;
-  }
-
-  .tip-box p {
-    font-size: 0.9rem;
-  }
-
-  .channel-box {
-    padding: 8px;
+  .recommended-channels-content {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on very small screens */
   }
 
   .channel-box a {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }

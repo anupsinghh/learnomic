@@ -171,13 +171,14 @@ body {
 }
 
 .App-main h1 {
-  margin-bottom: 20px;
-  font-size: 2.2rem;
+  margin-bottom: 10px;
+  margin-top: 10%;
+  font-size: 2.5rem;
   text-align: center; /* Adjusted font size */
 }
 
 .semester-dropdown {
-  margin-top: 10px;
+
 }
 
 .semester-dropdown select {

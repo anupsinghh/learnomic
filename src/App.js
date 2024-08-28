@@ -11,6 +11,7 @@ import ContactPage from './ContactPage';
 import TipsBanner from './TipsBanner';
 import { auth } from './firebase-config';
 import Recommend from './Recommend';
+import CgpaCalculator from './CgpaCalculator';
 
 function App() {
   const [semester, setSemester] = useState('');
@@ -115,6 +116,7 @@ function App() {
                     )}
                     <TipsBanner />
                     <Recommend />
+                    <CgpaCalculator/>
                   </>
                 ) : (
                   <Navigate to="/login" />

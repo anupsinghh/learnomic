@@ -1,68 +1,82 @@
 import React from 'react';
 import './Recommend.css';
 
+const channels = [
+  {
+    name: 'Code with Harry',
+    url: 'https://www.youtube.com/c/CodeWithHarry',
+    thumbnail: 'https://img.youtube.com/vi/5_5oE5lgrhw/0.jpg' // Replace VIDEO_ID with an actual video ID
+  },
+  {
+    name: 'striver',
+    url: 'https://www.youtube.com/@striver_79',
+    thumbnail: 'https://img.youtube.com/vi/rHn9af16O_E/0.jpg'
+  },
+  {
+    name: 'fraz',
+    url: 'https://www.youtube.com/@mohammadfraz',
+    thumbnail: 'https://img.youtube.com/vi/hORRaq7CNw0/0.jpg'
+  },
+  {
+    name: 'Apna College',
+    url: 'https://www.youtube.com/c/ApnaCollegeOfficial',
+    thumbnail: 'https://img.youtube.com/vi/1yrh60og6qc/0.jpg'
+  },
+  {
+    name: 'Gate Smashers',
+    url: 'https://www.youtube.com/c/GateSmasher',
+    thumbnail: 'https://img.youtube.com/vi/5GDTIUVlHB8/0.jpg'
+  },
+  {
+    name: "Jenny's Lectures",
+    url: 'https://www.youtube.com/c/JennysLecturesCSIT',
+    thumbnail: 'https://img.youtube.com/vi/T7AxM7Vqvaw/0.jpg'
+  },
+  {
+    name: 'Neso Academy',
+    url: 'https://www.youtube.com/c/NesoAcademy',
+    thumbnail: 'https://img.youtube.com/vi/vBURTt97EkA/0.jpg'
+  },
+  {
+    name: 'Knowledge Gate',
+    url: 'https://www.youtube.com/c/KnowledgeGate',
+    thumbnail: 'https://img.youtube.com/vi/xw_OuOhjauw/0.jpg'
+  },
+  {
+    name: 'Telusko',
+    url: 'https://www.youtube.com/c/Telusko',
+    thumbnail: 'https://img.youtube.com/vi/Znmz_WxMxp4/0.jpg'
+  },
+  {
+    name: 'Simple Snippets',
+    url: 'https://www.youtube.com/c/SimpleSnippets',
+    thumbnail: 'https://img.youtube.com/vi/QaKX6SjU1vg/0.jpg'
+  }
+];
+
 const Recommend = () => {
   return (
     <div className="recommended-channels">
       <h3>Recommended YouTube Channels</h3>
-
-      <div className="subject-section">
-        <h4>DSA (Data Structures & Algorithms)</h4>
-        <a href="https://www.youtube.com/c/CodeWithHarry" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Code with Harry
+      <div className="recommended-channels-content">
+        {channels.map((channel, index) => (
+          <div key={index} className="subject-section">
+            <a href={channel.url} target="_blank" rel="noopener noreferrer">
+              <div className="channel-box">
+                <img
+                  src={channel.thumbnail}
+                  alt={channel.name}
+                  className="channel-thumbnail"
+                />
+                <div className="channel-name">{channel.name}</div>
+              </div>
+            </a>
           </div>
-        </a>
-        <a href="https://www.youtube.com/c/ApnaCollegeOfficial" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Apna College
-          </div>
-        </a>
-      </div>
-
-      <div className="subject-section">
-        <h4>DBMS (Database Management Systems)</h4>
-        <a href="https://www.youtube.com/c/GateSmasher" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Gate Smashers
-          </div>
-        </a>
-        <a href="https://www.youtube.com/c/JennysLecturesCSIT" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Jenny's Lectures
-          </div>
-        </a>
-      </div>
-
-      <div className="subject-section">
-        <h4>OS (Operating Systems)</h4>
-        <a href="https://www.youtube.com/c/NesoAcademy" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Neso Academy
-          </div>
-        </a>
-        <a href="https://www.youtube.com/c/KnowledgeGate" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Knowledge Gate
-          </div>
-        </a>
-      </div>
-
-      <div className="subject-section">
-        <h4>OOP (Object-Oriented Programming)</h4>
-        <a href="https://www.youtube.com/c/Telusko" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Telusko
-          </div>
-        </a>
-        <a href="https://www.youtube.com/c/SimpleSnippets" target="_blank" rel="noopener noreferrer">
-          <div className="channel-box">
-            Simple Snippets
-          </div>
-        </a>
+        ))}
       </div>
     </div>
   );
 };
+
 
 export default Recommend;
