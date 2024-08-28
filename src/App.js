@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import './App.css';
 import SubjectList from './SubjectList';
@@ -8,7 +8,7 @@ import ContentDetails from './ContentDetails';
 import LoginPage from './LoginPage';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
-import TipsBanner from './TipsBanner'; // Import the TipsBanner component
+import TipsBanner from './TipsBanner';
 import { auth } from './firebase-config';
 import Recommend from './Recommend';
 
@@ -16,6 +16,7 @@ function App() {
   const [semester, setSemester] = useState('');
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // New state for menu toggle
 
   const subjects = {
     1: ['Basics of Electrical & Electronic Engineering', 'Physics', 'Computer Programming'],
@@ -55,22 +56,35 @@ function App() {
     return <div>Loading...</div>;
   }
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  
+  const closeMenu =()=>{
+    setIsMenuOpen(false)
+  };
+
   return (
     <Router>
       <div className="App">
         <header className="App-header">
           <nav className="ease">EasyStudy</nav>
-          <nav className="navbar">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            {user && (
-              <>
-                <span className="user-name">Hello, {user.displayName}</span>
-                <button onClick={handleSignOut} className="logout-button">Log Out</button>
-              </>
-            )}
-            {!user && <a href="/login" className="loginb">Login</a>}
+          <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+            <button className="menu-toggle" onClick={toggleMenu}>
+              &#9776; {/* Hamburger icon */}
+            </button>
+            <div className="nav-links">
+              <Link to="/"onClick={closeMenu}>Home</Link>
+              <Link to="/about" onClick={closeMenu}>About</Link>
+              <Link to="/contact" onClick={closeMenu}>Contact</Link>
+              {user && (
+                <>
+                  <span className="user-name">Hello, {user.displayName}</span>
+                  <button onClick={handleSignOut} className="logout-button">Log Out</button>
+                </>
+              )}
+              {!user && <Link to="/login" className="loginb">Login</Link>}
+            </div>
           </nav>
         </header>
         <main className="App-main">
@@ -99,10 +113,8 @@ function App() {
                         />
                       </div>
                     )}
-                    {/* Include the sliding TipsBanner here */}
                     <TipsBanner />
-                    <Recommend/>
-                    
+                    <Recommend />
                   </>
                 ) : (
                   <Navigate to="/login" />
@@ -117,7 +129,7 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          <p className="footer-text">Website made by Anup Singh</p>
+          <p className="footer-text"> &copy;2024 Anup Singh</p>
           <div className="footer-social-icons">
             <a href="https://www.linkedin.com/in/connectanupsingh/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>

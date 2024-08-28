@@ -8,58 +8,58 @@ const Recommend = () => {
 
       <div className="subject-section">
         <h4>DSA (Data Structures & Algorithms)</h4>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/CodeWithHarry" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/c/CodeWithHarry" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Code with Harry
-          </a>
-        </div>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/ApnaCollegeOfficial" target="_blank" rel="noopener noreferrer">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/c/ApnaCollegeOfficial" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Apna College
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       <div className="subject-section">
         <h4>DBMS (Database Management Systems)</h4>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/GateSmasher" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/c/GateSmasher" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Gate Smashers
-          </a>
-        </div>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/JennysLecturesCSIT" target="_blank" rel="noopener noreferrer">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/c/JennysLecturesCSIT" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Jenny's Lectures
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       <div className="subject-section">
         <h4>OS (Operating Systems)</h4>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/NesoAcademy" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/c/NesoAcademy" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Neso Academy
-          </a>
-        </div>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/KnowledgeGate" target="_blank" rel="noopener noreferrer">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/c/KnowledgeGate" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Knowledge Gate
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       <div className="subject-section">
         <h4>OOP (Object-Oriented Programming)</h4>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/Telusko" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/c/Telusko" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Telusko
-          </a>
-        </div>
-        <div className="channel-box">
-          <a href="https://www.youtube.com/c/SimpleSnippets" target="_blank" rel="noopener noreferrer">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/c/SimpleSnippets" target="_blank" rel="noopener noreferrer">
+          <div className="channel-box">
             Simple Snippets
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   );

@@ -22,9 +22,72 @@ body {
   align-items: center;
 }
 
+/* Default navbar styles */
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links .loginb {
+  background-color: #007bff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #e2eafc;
+}
+
+.logout-button {
+  background-color: red;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .navbar.open .nav-links {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 .loginb {
@@ -78,8 +141,7 @@ body {
 .user-name {
   color: #ff477e;
   font-size: 18px;
-  margin-right: 10px;
-  text-align: right;
+  margin: auto;
 }
 
 .logout-button {
@@ -110,7 +172,8 @@ body {
 
 .App-main h1 {
   margin-bottom: 20px;
-  font-size: 2.2rem; /* Adjusted font size */
+  font-size: 2.2rem;
+  text-align: center; /* Adjusted font size */
 }
 
 .semester-dropdown {
@@ -266,12 +329,12 @@ body {
   display: flex;
   justify-content: center; /* Center all content */
   align-items: center; /* Vertically align items */
-  gap: 20px; /* Space between text and icons */
+  gap: 0px; /* Space between text and icons */
 }
 
 .footer-text {
   margin: 0;
-  font-size: 16px; /* Adjust as needed */
+  font-size: 15px; /* Adjust as needed */
 }
 
 .footer-social-icons {
@@ -280,13 +343,13 @@ body {
 }
 
 .footer-social-icons a {
-  margin: 0 10px;
+  margin: 0 7px;
   color: #000; /* Default color for icons */
   text-decoration: none;
 }
 
 .footer-social-icons i {
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 20px; /* Adjust the size as needed */
 }
 
 .footer-social-icons a:hover i {
