@@ -13,6 +13,7 @@ import { auth } from './firebase-config';
 import Recommend from './Recommend';
 import CgpaCalculator from './CgpaCalculator';
 import Roadmap from './Roadmap';
+import RunningText from './RunningText'; // Import the new component
 
 function App() {
   const [semester, setSemester] = useState('');
@@ -94,6 +95,10 @@ function App() {
             </div>
           </nav>
         </header>
+        
+        {/* Running text component */}
+        <RunningText />
+
         <main className="App-main">
           <Routes>
             <Route
@@ -135,7 +140,7 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          <p className="footer-text">  Developed by Anup Singh</p>
+          <p className="footer-text">Developed by Anup Singh</p>
           <div className="footer-social-icons">
             <a href="https://www.linkedin.com/in/connectanupsingh/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>

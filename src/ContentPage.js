@@ -59,7 +59,7 @@ const ContentPage = () => {
             </Link>
           ))
         ) : (
-          <p>No content options available for this subject.</p>
+          <p>No content options available for this subject it will be added soon.</p>
         )}
       </div>
     </div>
