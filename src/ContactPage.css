@@ -15,12 +15,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 600px;
     text-align: center;
+    margin: 0px;
 
   }
   
   .contact-container h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 0px;
+    
   }
   
   .contact-container p {

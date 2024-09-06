@@ -6,10 +6,10 @@ const AboutPage = () => {
     <div className="about-page">
       <div className="about-container">
         <h1>About Us</h1>
-        <p>👋 Hi! I'm Anup Singh, a passionate computer engineering student at Marwadi University. I created this platform to help students access valuable academic resources more easily. Whether you're looking for past exam papers, notes, or institute materials, you're in the right place!</p>
-        <p>💻 This website serves as a comprehensive resource hub, categorizing materials based on subjects and semesters. The idea is to create a one-stop solution where juniors and peers alike can access everything they need to succeed in their studies.</p>
-        <p>🚀 Explore, learn, and excel with EasyStudy!</p>
-        <p>🌐 Stay connected and feel free to reach out anytime for suggestions or feedback. Together, let's make learning more accessible for everyone.</p>
+        <p>👋 Welcome to EasyStudy, your go-to resource hub for academic materials. I'm Anup Singh, a computer engineering student at Marwadi University, dedicated to providing streamlined access to past exams, notes, and institute materials.</p>
+        <p>📚 This platform is designed to support students by organizing resources by subject and semester, making it easier to find what you need to excel.</p>
+        <p>🚀 Connect, learn, and succeed with EasyStudy.</p>
+        <p>⚖️ All materials provided on this platform are used solely for educational purposes. They are intended to support student learning and academic success while respecting intellectual property rights.</p>
       </div>
     </div>
   );

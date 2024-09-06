@@ -54,7 +54,7 @@ const CgpaCalculator = () => {
     <div className="cgpa-calculator">
       <h2>CGPA Calculator</h2>
       <label>
-        Current Semester:
+        Your Current Semester:
         <input
           type="number"
           min="1"
@@ -65,7 +65,7 @@ const CgpaCalculator = () => {
       </label>
 
       <label>
-        SGPA for Semesters 1 to {currentSemester-1 && currentSemester-1>0} (comma-separated):
+        SGPA of all previous Semesters  (comma-separated):
         <input
           type="text"
           value={sgpas.slice(0, parseInt(currentSemester)).join(',')}

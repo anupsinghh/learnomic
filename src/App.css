@@ -345,7 +345,7 @@ body {
 
 .footer-social-icons a {
   margin: 0 7px;
-  color: #000; /* Default color for icons */
+  color: #0077b5; /* Default color for icons */
   text-decoration: none;
 }
 
@@ -360,6 +360,53 @@ body {
 .footer-social-icons a[href*="instagram"] i {
   color: #e4405f; /* Instagram color */
 }
+
+/* Spinner styles */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  position: fixed; /* Make it stay on the center even if content is loaded behind */
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Optional: Light overlay */
+  z-index: 9999; /* Ensure it's on top */
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #ff0a54;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive spinner size */
+@media (max-width: 768px) {
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border-width: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border-width: 5px;
+  }
+}
+
 
 
 

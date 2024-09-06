@@ -10,15 +10,30 @@ const contentLinks = {
         title: 'Introduction to Electrical Engineering Concepts',
         view: 'https://drive.google.com/file/d/1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3/view',
         download: 'https://drive.google.com/uc?export=download&id=1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3',
-      }
-    ]
+      },
+    ],
+    // 'Mid Papers':[
+    //   {
+    //     title: 'Introduction to Electrical Engineering Concepts',
+    //     view: 'https://drive.google.com/file/d/1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3',
+    //   },
+    // ],
+    // 'End Sem Papers':[
+    //   {
+    //     title: 'Introduction to Electrical Engineering Concepts',
+    //     view: 'https://drive.google.com/file/d/1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=1tEZeGKOPsl9cZROldpKDm3yVzCLbSAK3',
+    //   },
+    // ],
+
   },
   'Basics of Electrical & Electronic Engineering': {
     'Institute Material': [
       {
-        title: 'Introduction to Electrical Engineering Concepts',
-        view: 'https://drive.google.com/file/d/yourfileid1/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid1',
+        title: 'Folder Link',
+        view: 'https://drive.google.com/drive/folders/1gnEAkfbfYB0Hp9gyPoLa1XmNT_ezACyC?usp=sharing',
+        download: 'https://drive.google.com/drive/folders/1gnEAkfbfYB0Hp9gyPoLa1XmNT_ezACyC?usp=sharing',
       },
       // Add more PDFs as needed
     ],
@@ -30,34 +45,34 @@ const contentLinks = {
       },
       // Add more PDFs as needed
     ],
-    'End Sem Papers': [
-      {
-        title: 'End Sem Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid3/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid3',
-      },
-      // Add more PDFs as needed
-    ],
-    Notes: [
-      {
-        title: 'Introduction to Electrical Engineering',
-        view: 'https://drive.google.com/file/d/yourfileid4/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid4',
-      },
-      {
-        title: 'Basic Electronics',
-        view: 'https://drive.google.com/file/d/yourfileid5/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid5',
-      },
-      // Add more PDFs as needed
-    ],
+    // 'End Sem Papers': [
+    //   {
+    //     title: 'End Sem Paper 1',
+    //     view: 'https://drive.google.com/file/d/yourfileid3/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid3',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
+    // Notes: [
+    //   {
+    //     title: 'Introduction to Electrical Engineering',
+    //     view: 'https://drive.google.com/file/d/yourfileid4/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid4',
+    //   },
+    //   {
+    //     title: 'Basic Electronics',
+    //     view: 'https://drive.google.com/file/d/yourfileid5/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid5',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
   },
   'Physics': {
     'Institute Material': [
       {
-        title: 'Physics Fundamentals',
-        view: 'https://drive.google.com/file/d/yourfileid6/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid6',
+        title: 'Folder Link',
+        view: 'https://drive.google.com/drive/folders/1LGL6yYS9iytxtKSQWhZTbeV5LIY4JRFN?usp=sharing',
+        download: 'https://drive.google.com/drive/folders/1LGL6yYS9iytxtKSQWhZTbeV5LIY4JRFN?usp=sharing',
       },
       // Add more PDFs as needed
     ],
@@ -109,41 +124,52 @@ const contentLinks = {
   'Computer Programming': {
     'Institute Material': [
       {
-        title: 'Programming Concepts',
-        view: 'https://drive.google.com/file/d/yourfileid11/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid11',
+        title: 'Folder - Complete PDFs ',
+        view: 'https://drive.google.com/drive/folders/1GOZtQjz9OtbTFLy83GXbedpMk2rNzjc2?usp=sharing',
+        download: 'https://drive.google.com/drive/folders/1GOZtQjz9OtbTFLy83GXbedpMk2rNzjc2?usp=sharing',
       },
       // Add more PDFs as needed
     ],
     'Mid Papers': [
       {
         title: 'Mid Term Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid12/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid12',
+        view: 'https://drive.google.com/file/d/1B5VV8JJXW14tL1I5iWVH-l9f6VBHMxjL/view',
+        download: 'https://drive.google.com/uc?export=download&id=1B5VV8JJXW14tL1I5iWVH-l9f6VBHMxjL',
+      },
+      {
+        title: 'Assignment (Must Do)',
+        view: 'https://drive.google.com/file/d/1VnpLJO5B5waF5FQJtPqytZewDOZ7IMQi/view?usp=drive_link',
+        download: 'https://drive.google.com/file/d/1VnpLJO5B5waF5FQJtPqytZewDOZ7IMQi/view?usp=drive_link',
       },
       // Add more PDFs as needed
     ],
     'End Sem Papers': [
       {
-        title: 'End Sem Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid13/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid13',
+        title: 'End Sem Paper 2023',
+        view: 'https://drive.google.com/file/d/1xPsM_Tvb2udY_kNVNWFp1inavAIzquo4/view',
+        download: 'https://drive.google.com/uc?export=download&id=1xPsM_Tvb2udY_kNVNWFp1inavAIzquo4',
+      },
+      {
+        title: 'Paper 2',
+        view: 'https://drive.google.com/file/d/1WgtYkt3W4C6BQ6FKGEFrNLCBmTf77jJH/view',
+        download: 'https://drive.google.com/uc?export=download&id=1WgtYkt3W4C6BQ6FKGEFrNLCBmTf77jJH',
       },
       // Add more PDFs as needed
     ],
-    Notes: [
-      {
-        title: 'Introduction to Programming',
-        view: 'https://drive.google.com/file/d/yourfileid14/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid14',
-      },
-      {
-        title: 'Programming Basics',
-        view: 'https://drive.google.com/file/d/yourfileid15/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid15',
-      },
-      // Add more PDFs as needed
-    ],
+   
+    // Notes: [
+    //   {
+    //     title: 'Introduction to Programming',
+    //     view: 'https://drive.google.com/file/d/yourfileid14/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid14',
+    //   },
+    //   {
+    //     title: 'Programming Basics',
+    //     view: 'https://drive.google.com/file/d/yourfileid15/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid15',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
   },
   'Advance Java Technology': {
     'Institute Material': [
@@ -170,8 +196,8 @@ const contentLinks = {
     'End Sem Papers': [
       {
         title: 'End Sem Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid18/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid18',
+        view: 'https://drive.google.com/file/d/1M7BEKekJ5EDwNVxGWRB7JM6cJxvpy6tF/view',
+        download: 'https://drive.google.com/uc?export=download&id=1M7BEKekJ5EDwNVxGWRB7JM6cJxvpy6tF',
       },
       // Add more PDFs as needed
     ],
@@ -260,14 +286,14 @@ const contentLinks = {
    
   },
   'Web Technology': {
-    'Institute Material': [
-      {
-        title: 'Computer Science Basics',
-        view: 'https://drive.google.com/file/d/yourfileid26/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid26',
-      },
-      // Add more PDFs as needed
-    ],
+    // 'Institute Material': [
+    //   {
+    //     title: 'Computer Science Basics',
+    //     view: 'https://drive.google.com/file/d/yourfileid26/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid26',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
     'Mid Papers': [
       {
         title: 'Mid Term Paper 1',
@@ -276,27 +302,27 @@ const contentLinks = {
       },
       // Add more PDFs as needed
     ],
-    'End Sem Papers': [
-      {
-        title: 'End Sem Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid28/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid28',
-      },
+    // 'End Sem Papers': [
+    //   {
+    //     title: 'End Sem Paper 1',
+    //     view: 'https://drive.google.com/file/d/yourfileid28/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid28',
+    //   },
       // Add more PDFs as needed
-    ],
-    Notes: [
-      {
-        title: 'Introduction to Computer Science',
-        view: 'https://drive.google.com/file/d/yourfileid29/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid29',
-      },
-      {
-        title: 'Programming Concepts',
-        view: 'https://drive.google.com/file/d/yourfileid30/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfile',
-      },
-      // Add more PDFs as needed
-    ],
+    // ],
+    // Notes: [
+    //   {
+    //     title: 'Introduction to Computer Science',
+    //     view: 'https://drive.google.com/file/d/yourfileid29/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid29',
+    //   },
+    //   {
+    //     title: 'Programming Concepts',
+    //     view: 'https://drive.google.com/file/d/yourfileid30/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfile',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
     // Add more content types and their PDFs here
   },
   '.NET Technologies': {
@@ -316,19 +342,19 @@ const contentLinks = {
       },
       // Add more PDFs as needed
     ],
-    Notes: [
-      {
-        title: 'Introduction to Computer Science',
-        view: 'https://drive.google.com/file/d/yourfileid29/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid29',
-      },
-      {
-        title: 'Programming Concepts',
-        view: 'https://drive.google.com/file/d/yourfileid30/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfile',
-      },
-      // Add more PDFs as needed
-    ],
+    // Notes: [
+    //   {
+    //     title: 'Introduction to Computer Science',
+    //     view: 'https://drive.google.com/file/d/yourfileid29/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfileid29',
+    //   },
+    //   {
+    //     title: 'Programming Concepts',
+    //     view: 'https://drive.google.com/file/d/yourfileid30/view',
+    //     download: 'https://drive.google.com/uc?export=download&id=yourfile',
+    //   },
+    //   // Add more PDFs as needed
+    // ],
     // Add more content types and their PDFs here
   },  
   'Data Structures': {
@@ -351,22 +377,23 @@ const contentLinks = {
     'End Sem Papers': [
       {
         title: 'End Sem Paper 1',
-        view: 'https://drive.google.com/file/d/yourfileid28/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid28',
+        view: 'https://drive.google.com/file/d/157W7wH0rIgh6ys5IvcvdxPyhstH08R0h/view',
+        download: 'https://drive.google.com/uc?export=download&id=157W7wH0rIgh6ys5IvcvdxPyhstH08R0h',
+      },
+      {
+        title: 'End Sem Paper 2',
+        view: 'https://drive.google.com/file/d/1AzE9jsDrzfnLSO35r8ZA2IO28rfqG44x/view',
+        download: 'https://drive.google.com/uc?export=download&id=1AzE9jsDrzfnLSO35r8ZA2IO28rfqG44x',
       },
       // Add more PDFs as needed
     ],
     Notes: [
       {
-        title: 'Introduction to Computer Science',
-        view: 'https://drive.google.com/file/d/yourfileid29/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfileid29',
+        title: 'Complete Notes',
+        view: 'https://drive.google.com/file/d/1kksvRxZkEmo7U-qTDx8Tu1GjVFm50Nka/view',
+        download: 'https://drive.google.com/uc?export=download&id=1kksvRxZkEmo7U-qTDx8Tu1GjVFm50Nka',
       },
-      {
-        title: 'Programming Concepts',
-        view: 'https://drive.google.com/file/d/yourfileid30/view',
-        download: 'https://drive.google.com/uc?export=download&id=yourfile',
-      },
+    
       // Add more PDFs as needed
     ],
     // Add more content types and their PDFs here

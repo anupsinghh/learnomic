@@ -12,6 +12,7 @@ import TipsBanner from './TipsBanner';
 import { auth } from './firebase-config';
 import Recommend from './Recommend';
 import CgpaCalculator from './CgpaCalculator';
+import Roadmap from './Roadmap';
 
 function App() {
   const [semester, setSemester] = useState('');
@@ -22,9 +23,9 @@ function App() {
   const subjects = {
     1: ['Basics of Electrical & Electronic Engineering', 'Physics', 'Computer Programming'],
     2: ['Biology', 'English', 'Computer Science'],
-    3: ['Data Structures', 'Database Management System', 'Advance Java Technology','Web Technology','Probability & Statistics'],
+    3: ['Data Structures', 'Database Management System', 'Advance Java Technology', 'Web Technology', 'Probability & Statistics'],
     4: ['Database Systems', 'Software Engineering', 'Networks'],
-    5: ['Fundamentals of Microprocessors', '.NET Technologies', 'Design and Analysis of Algorithm','Cloud Computing','Cyber Security'],
+    5: ['Fundamentals of Microprocessors', '.NET Technologies', 'Design and Analysis of Algorithm', 'Cloud Computing', 'Cyber Security'],
     6: ['Web Development', 'Mobile Apps', 'AI'],
     7: ['Machine Learning', 'Cloud Computing', 'Cyber Security'],
     8: ['Project', 'Ethics', 'Professional Practices'],
@@ -53,29 +54,34 @@ function App() {
       });
   };
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
-  const closeMenu =()=>{
-    setIsMenuOpen(false)
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+      </div>
+    );
+  }
+  
 
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <nav className="ease">EasyStudy</nav>
+          <nav className="ease">Learnomic</nav>
           <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
             <button className="menu-toggle" onClick={toggleMenu}>
               &#9776; {/* Hamburger icon */}
             </button>
             <div className="nav-links">
-              <Link to="/"onClick={closeMenu}>Home</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
               <Link to="/about" onClick={closeMenu}>About</Link>
               <Link to="/contact" onClick={closeMenu}>Contact</Link>
               {user && (
@@ -108,15 +114,13 @@ function App() {
                     </div>
                     {semester && (
                       <div className="subjects-container">
-                        <SubjectList
-                          subjects={subjects[semester]}
-                          semester={semester}
-                        />
+                        <SubjectList subjects={subjects[semester]} semester={semester} />
                       </div>
                     )}
                     <TipsBanner />
+                    <Roadmap/>
                     <Recommend />
-                    <CgpaCalculator/>
+                    <CgpaCalculator />
                   </>
                 ) : (
                   <Navigate to="/login" />
@@ -131,7 +135,7 @@ function App() {
           </Routes>
         </main>
         <footer className="App-footer">
-          <p className="footer-text"> &copy;2024 Anup Singh</p>
+          <p className="footer-text">  Developed by Anup Singh</p>
           <div className="footer-social-icons">
             <a href="https://www.linkedin.com/in/connectanupsingh/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>

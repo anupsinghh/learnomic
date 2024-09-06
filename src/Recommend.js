@@ -8,12 +8,12 @@ const channels = [
     thumbnail: 'https://img.youtube.com/vi/5_5oE5lgrhw/0.jpg' // Replace VIDEO_ID with an actual video ID
   },
   {
-    name: 'striver',
+    name: 'Striver',
     url: 'https://www.youtube.com/@striver_79',
     thumbnail: 'https://img.youtube.com/vi/rHn9af16O_E/0.jpg'
   },
   {
-    name: 'fraz',
+    name: 'Fraz',
     url: 'https://www.youtube.com/@mohammadfraz',
     thumbnail: 'https://img.youtube.com/vi/hORRaq7CNw0/0.jpg'
   },
