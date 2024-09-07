@@ -6,7 +6,7 @@ const RunningText = () => {
     <div className="running-text">
       <div className="marquee">
         <div className="marquee-inner">
-          Only Semester 1 and Semester 3 materials are currently uploaded.
+          Only Semester 1/3/5  materials are currently uploaded.
          
         </div>
       </div>

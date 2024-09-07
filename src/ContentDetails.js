@@ -396,6 +396,40 @@ const contentLinks = {
     
       // Add more PDFs as needed
     ],
+
+  },
+    'Fundamentals of Microprocessors': {
+    
+    'Mid Papers': [
+      {
+        title: 'Mid Term Paper 1',
+        view: 'https://drive.google.com/file/d/1IIPNqMoBQpiiyD0xUge3xk-QiijpXaN8/view',
+        download: 'https://drive.google.com/uc?export=download&id=1IIPNqMoBQpiiyD0xUge3xk-QiijpXaN8',
+      },
+      // Add more PDFs as needed
+    ],
+    'End Sem Papers': [
+      {
+        title: 'End Sem Paper 1',
+        view: 'https://drive.google.com/file/d/1E7OOdnLfjiYmLtqeg876N4LGupYlGTpJ/view',
+        download: 'https://drive.google.com/uc?export=download&id=1E7OOdnLfjiYmLtqeg876N4LGupYlGTpJ',
+      },
+      {
+        title: 'End Sem Paper 2',
+        view: 'https://drive.google.com/file/d/1SkYyfarms7PLTsPOyUbDNeCXtfM75jJo/view',
+        download: 'https://drive.google.com/uc?export=download&id=1SkYyfarms7PLTsPOyUbDNeCXtfM75jJo',
+      },
+      // Add more PDFs as needed
+    ],
+    Notes: [
+      {
+        title: 'Complete Notes',
+        view: 'https://drive.google.com/file/d/1kksvRxZkEmo7U-qTDx8Tu1GjVFm50Nka/view',
+        download: 'https://drive.google.com/uc?export=download&id=1kksvRxZkEmo7U-qTDx8Tu1GjVFm50Nka',
+      },
+    
+      // Add more PDFs as needed
+    ],
     // Add more content types and their PDFs here
   },
   // Add more subjects and their content links here
